@@ -76,7 +76,7 @@
 
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
-        const ubicacionRef = ref(db, 'ubicacion/usuario');
+        const ubicacionRef = ref(db, 'ubicacion/MotoKevin');
         const geofencesRef = ref(db, 'geocercas');
 
         mapboxgl.accessToken = 'pk.eyJ1IjoibHprMjkxMiIsImEiOiJjbWdzYmZicjUxcXMyMmlwdnJsNmJhc2Y2In0.H_AarMxbn777uwj92e5eTQ';
@@ -227,4 +227,5 @@
         map.on('load', () => map.scrollZoom.enable());
     </script>
 </body>
+
 </html>
